@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&display=swap');
+*{
+    
+    box-sizing: border-box;
+    font-weight: lighter;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+
+a{
+    color:black
+}
+
+a:hover
+{
+    color: dimgray;
+
+}
+
+/* content pictures */
+
+.meme-joker{background-image: url(/img/content/meme-joker.png);}
+.meme-789{background-image: url(/img/content/meme-789.png);}
+
+.animals-birdman{background-image: url(/img/content/animals-birdman.png);}
+.people-man{background-image: url(/img/content/people-man.png);}
+
+.meme-mcsonic{background-image: url(/img/content/meme-mcsonic.png);}
+.people-marge{background-image: url(/img/content/people-marge.png)}
+
+.badfood-donut{background-image: url(/img/content/badfood-donut.png);}
+.badfood-pepper{background-image: url(/img/content/badfood-pepper.png);}
+
+.baby-smile1{background-image: url(/img/content/baby-smile1.png);}
+.baby-smile2{background-image: url(/img/content/baby-smile2.png);}
+
+/*profile pictures*/
+.profile-joker{background-image: url(/img/profile/joker.png);}
+.profile-chicken{background-image: url(/img/profile/chicken.png);}
+.profile-happy{background-image: url(/img/profile/happy.png);}
+.profile-emoji{background-image: url(/img/profile/emoji.png);}
+.profile-devil{background-image: url(/img/profile/devil.png);}
+.profile-donut{background-image: url(/img/profile/donut.png);}
+.profile-simpson{background-image: url(/img/profile/simpson.png);}
+.profile-lisa{background-image: url(/img/profile/lisa.png);}
+input:focus
+{
+    outline: none;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: snow;
+    font-size: 1.2vw;
+
+}
+
+/* rules applied to the header */
+
+.top
+{
+    text-align: center;
+    margin-bottom: 3em;
+
+}
+
+.story 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-bottom: 4em;
+}
+
+.story > div
+{
+    height: 15vh;
+    width: 15vh;
+    background: rgb(218,206,65);
+    background: linear-gradient(59deg, rgba(218,206,65,1) 0%, rgba(228,7,116,1) 79%);
+    border-radius: 100%;
+    margin: auto 1em;
+}
+
+.story-pic
+{
+    height: 14vh;
+    width: 14vh;
+    margin: 0.235vw;
+    border-radius: 100%;
+    background-color: maroon;
+    background-size: cover;
+    background-position-x: center;
+}
+
+/* Main content section general rules */
+.content
+{
+    display: grid;
+    grid-template-columns:6fr 8fr 6fr;
+    grid-gap: 4em;
+    margin: 2em 4em;
+}
+
+.content > article 
+{
+    height: 70vh;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.3em;
+    margin: 4em ;
+}
+
+.left
+{
+    margin-left: 4em;
+}
+
+.right
+{
+    margin-right:4em;
+}
+
+/* profile content */
+.profile-banner
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.profile-pic-background
+{
+    height:10vh;
+    width:10vh;
+    background: rgb(218,206,65);
+    background: linear-gradient(59deg, rgba(218,206,65,1) 0%, rgba(228,7,116,1) 79%);
+    border-radius: 100%;
+    margin: 1em 1em;
+}
+
+.profile-pic
+{
+    height: 9vh;
+    width: 9vh;
+    margin: 0.245vw;
+    border-radius: 100%;
+    background-color: maroon;
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+.profile-name
+{
+    margin-top: 2.5em;
+    overflow: hidden;;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.feedback
+{
+    margin: 0em 0em;
+    padding: 0em 0em;
+    text-align: left;
+    font-size: 0.9em;
+    border-bottom: 1px solid #e2e2e2;;
+}
+
+.feedback > li
+{
+    margin: 0em 0em;
+    padding: 0em 2em;
+    display: inline-block;
+    text-align: right;
+}
+
+.lineup
+{
+    padding-left: 30rem;
+}
+
+.comments-section
+{
+    padding: 0 1em
+}
+
+.read
+{
+    color: #a3a3a3;
+    font-weight: bold;
+}
+
+.comments-section > p > a
+{
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.add-comment
+{
+    border: none;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 1em;
+    padding-left: 1rem;
+    margin: 0em 0em;;
+    width: 100%;
+    height: 3em;
+}
+
+
+.button-control
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: -0.6em;
+}
+.save,.share,.like
+{
+    justify-self: center;
+    display: inline-block;
+    height:10vh;
+    width:10vh;
+    border: 2px solid #e2e2e2;
+    border-radius: 100%;
+    margin: 0.5em 0.5em;
+    margin-bottom: 0em;
+    background-size: 3vw;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+/* button pictures */
+.like {background-image: url(/img/icon/icon-like.png);
+background-size: 4vw;}
+
+.save{background-image: url(/img/icon/icon-save.png);}
+
+.share{background-image: url(/img/icon/icon-share.png);
+background-position-y: 2vh;}
+
+
+.more
+{
+    letter-spacing: -8px;
+    text-align: right;
+    font-size: 5em;
+    line-height: 0em;
+    color:#a3a3a3;
+    margin: 0em 0em;
+    padding: 0em 1.35rem;
+}
+
+/* Post section styling */
+
+.post
+{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+/* related content */
+.img-section
+{
+    height: 45vh;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.related-tag
+{
+    color:#a3a3a3;
+    text-align: center;
+    font-weight: bold;
+    margin: 0em 0em;
+
+}
+
+@media(max-width: 1180px)
+{
+    body
+    {
+    font-family: 'Roboto', sans-serif;
+    background-color: snow;
+    font-size: 3vw;
+
+    }   
+        .top
+    {
+        text-align: center;
+        margin-bottom: 3em;
+        font-size: 4vw;
+        line-height: 0em;
+    }
+
+    .story 
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-gap: 1em;
+        overflow: hidden;
+    }
+
+    .story > div
+    {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .story-pic
+    {
+        height: 9vh;
+        width: 9vh;
+        margin: 0.6vw;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0em;
+    }
+
+    .one,.two,.three,.four,.five
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .adjust-related
+    {
+        border-top: 2em solid black;
+    }
+
+    .like {background-size: 10vw;}
+        
+    .save{background-size:8vw;}
+        
+    .share{background-size:8vw;}
+
+
+    .profile-pic
+{
+    margin: 0.5vw;
+}
+
+}
+
+
+
+
+
+
+
+
